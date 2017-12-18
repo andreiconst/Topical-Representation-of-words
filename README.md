@@ -27,7 +27,7 @@ return_r = Return the r_pearson and r_spearman coefficients for each topic<br />
 
 Return:<br />
 1 - topical representation of words, dictionary whose keys are words, and values are the vector of its topical representation<br />
-2 - if return_r = True, returns as well the r_pearson and r_spearman coefficients for each topic
+2 - if return_r = True, returns as well the r_pearson and r_spearman coefficients for each topic, as a list of tuple [r_pearson, r_spearman]
 
 
 ## Datasets
