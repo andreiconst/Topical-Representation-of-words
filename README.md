@@ -6,7 +6,7 @@ Research project conducted at the University of Pennsylvania
 Necessary function to run the other codes, mainly include loading data
 
 ### 2 - topical_lexicon
-Computes the topical representation without extension of glove features
+Computes the topical representation of words
 
 Parameters:<br />
 dimensions : number of dimensions, from 0 to 300, default 100<br />
@@ -15,7 +15,7 @@ threshold : threshold of counts. Words in the topical corpus chose count is belo
 Returns:<br />
 topical representation of words, dictionary whose keys are words, and values are the vector of its topical representation
 
-### 3 topical_lexicon_augmented
+### 3 - topical_lexicon_augmented
 Computes the topical representation with an extension based on glove features<br /><br />
 
 Parameters:<br />
@@ -33,14 +33,15 @@ Return:<br />
 
 ## Datasets
 ### 1 - Extended topical representation of words for 50 000 words
-/Data/300_dim_topical.csv<br />
+The 300-topic representation of words. To get partial topical representation of words, e.g. for only 100 dimensions, truncate the vector<br />
+/Data/300_dim_topical.csv<br /><br />
 
 [Column 1] = word<br />
 [Column 2 to end] = score of association of word to the topic<br />
-To get partial topical representation of words, truncate the vector
 
 ### 2 - PLOS Abstract summary pairs
-/Data/plos_abstract_summary.csv<br />
+Lay summary and abstract pair from the PLOS journal <br />
+/Data/plos_abstract_summary.csv<br /><br />
 [Column 1] = url<br />
 [Column 2] = field, i.e. the subjournal the article was extracted from<br />
 [Column 2] = abstract<br />
@@ -48,7 +49,8 @@ To get partial topical representation of words, truncate the vector
 Number of abstract / summary pairs : 20 000 
 
 ### 3 - Meriam webster defition
-/Data/meriam_webster_definitions.csv<br />
+Definitions of words from the Meriam Webster Learner dictionary <br />
+/Data/meriam_webster_definitions.csv<br /><br />
 [Column 1] = word<br />
 [Column 2] = definition in Meriam Webster learner dictionary<br />
 Number of definitions: 36 000<br />
