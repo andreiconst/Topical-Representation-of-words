@@ -21,12 +21,12 @@ Parameters:<br />
 **words_corpus:** words whose representation is needed, if none is provided then computes representation for all words present in glove, which is usually a lengthy process<br />
 **dimensions:** number of dimensions, from 0 to 300, default 100<br />
 threshold: threshold of counts. Words in the topical corpus chose count is below this threshold are not considered, default 10<br />
-**a:** value of the regularizer, default 1e-5<br />
+**alpha:** value of the regularizer, default 1e-5<br />
 **dimensions_glove:** number of glove dimension representation with which to infer topical scores. To save space we only included the 100 dimensional distributed representation, default 100<br />
 **return_r:** Return the r_pearson and r_spearman coefficients for each topic<br /><br />
 
 Return:<br />
-**topical representation of words: dictionary whose keys are words, and values are the vector of its topical representation<br />
+**topical representation of words:** dictionary whose keys are words, and values are the vector of its topical representation<br />
 **if return_r = True:** returns as well the r_pearson and r_spearman coefficients for each topic, as a list of tuple [r_pearson, r_spearman]
 
 
