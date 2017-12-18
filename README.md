@@ -1,5 +1,4 @@
-# Topical-Representation-of-words
-Research project conducted at the University of Pennsylvania
+# Files and code description
 
 ## Code
 ### 1 - toolbox
