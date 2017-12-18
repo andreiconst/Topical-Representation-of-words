@@ -47,7 +47,7 @@ Lay summary and abstract pair from the PLOS journal <br />
 [Column 3] = summary<br />
 Number of abstract / summary pairs : 20 000 
 
-### 3 - Meriam webster defition
+### 3 - Meriam webster definition
 Definitions of words from the Meriam Webster Learner dictionary <br />
 /Data/meriam_webster_definitions.csv<br /><br />
 [Column 1] = word<br />
