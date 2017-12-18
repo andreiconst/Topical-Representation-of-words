@@ -31,7 +31,7 @@ Return:<br />
 
 
 ## Datasets
-### 1 - Extended topical representation of words for 50 000 words
+### 1 - Extended topical representation of 50 000 words
 The 300-topic representation of words. To get partial topical representation of words, e.g. for only 100 dimensions, truncate the vector<br />
 /Data/300_dim_topical.csv<br /><br />
 
