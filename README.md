@@ -1,10 +1,26 @@
 # Files and code description
 
 ## Code
-### 1 - toolbox
+
+### 1 - meriam_crawler
+Crawls the Meriam Webster learner dictionary and extracts definition <br /><br />
+Parameters:<br />
+**file_name :** file_name with the words to look up, words, comma separated
+**max_time :** max number of seconds befond sending the next query, default 10, optional <br /><br />
+
+'''
+python meriam_crawler.py test_words.txt -max_time 5
+'''
+
+### 2 - plos_crawler
+Necessary function to run the other codes, mainly include loading data
+Parameters:<br />
+**file_name :** file_name with the words to look up
+**max_time :** max number of seconds befond sending the next query, default 10<br /><br />
+### 3 - toolbox
 Necessary function to run the other codes, mainly include loading data
 
-### 2 - topical_lexicon
+### 4 - topical_lexicon
 Computes the topical representation of words
 
 Parameters:<br />
@@ -14,7 +30,7 @@ Parameters:<br />
 Returns:<br />
 **topical representation of words:** dictionary whose keys are words, and values are the vector of its topical representation
 
-### 3 - topical_lexicon_augmented
+### 5 - topical_lexicon_augmented
 Computes the topical representation with an extension based on glove features<br /><br />
 
 Parameters:<br />
@@ -43,8 +59,8 @@ Lay summary and abstract pair from the PLOS journal <br />
 /Data/plos_abstract_summary.csv<br /><br />
 [Column 1] = url<br />
 [Column 2] = field, i.e. the subjournal the article was extracted from<br />
-[Column 2] = abstract<br />
-[Column 3] = summary<br />
+[Column 3] = abstract<br />
+[Column 4] = summary<br />
 Number of abstract / summary pairs : 20 000 
 
 ### 3 - Meriam webster definition
