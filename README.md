@@ -8,15 +8,20 @@ Parameters:<br />
 **file_name :** file_name with the words to look up, words, comma separated
 **max_time :** max number of seconds befond sending the next query, default 10, optional <br /><br />
 
-'''
+```
 python meriam_crawler.py test_words.txt -max_time 5
-'''
+```
 
 ### 2 - plos_crawler
-Necessary function to run the other codes, mainly include loading data
+Crawls the PLOS journal webstise dictionary and extracts abstract summary pairs <br /><br />
 Parameters:<br />
-**file_name :** file_name with the words to look up
-**max_time :** max number of seconds befond sending the next query, default 10<br /><br />
+**file_name :** file_name with the words to look up, words, comma separated
+**max_time :** max number of seconds befond sending the next query, default 10, optional <br /><br />
+
+```
+python plos_crawler.py test_plos.txt -max_time 5
+```
+
 ### 3 - toolbox
 Necessary function to run the other codes, mainly include loading data
 
