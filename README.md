@@ -2,7 +2,7 @@
 
 ## Code
 
-### 1 - meriam_crawler
+### 1 - meriam_crawler.py
 Crawls the Meriam Webster learner dictionary and extracts definition <br /><br />
 Parameters:<br />
 **file_name :** file_name with the words to look up, words, comma separated
@@ -12,7 +12,7 @@ Parameters:<br />
 python meriam_crawler.py test_words.txt -max_time 5
 ```
 
-### 2 - plos_crawler
+### 2 - plos_crawler.py
 Crawls the PLOS journal webstise dictionary and extracts abstract summary pairs <br /><br />
 Parameters:<br />
 **file_name :** file_name with the words to look up, words, comma separated
@@ -22,10 +22,10 @@ Parameters:<br />
 python plos_crawler.py test_plos.txt -max_time 5
 ```
 
-### 3 - toolbox
+### 3 - toolbox.py
 Necessary function to run the other codes, mainly include loading data
 
-### 4 - topical_lexicon
+### 4 - topical_lexicon.py
 Computes the topical representation of words
 
 Parameters:<br />
@@ -35,7 +35,7 @@ Parameters:<br />
 Returns:<br />
 **topical representation of words:** dictionary whose keys are words, and values are the vector of its topical representation
 
-### 5 - topical_lexicon_augmented
+### 5 - topical_lexicon_augmented.py
 Computes the topical representation with an extension based on glove features<br /><br />
 
 Parameters:<br />
