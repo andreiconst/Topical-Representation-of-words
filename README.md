@@ -75,3 +75,18 @@ Definitions of words from the Meriam Webster Learner dictionary <br />
 [Column 2] = definition in Meriam Webster learner dictionary<br />
 Number of definitions: 36 000<br />
 
+### 3 - Meriam webster tags
+Definitions of words from the Meriam Webster Learner dictionary <br />
+/Data/tag_index_meriam.csv<br /><br />
+[Column 1] = tag<br />
+[Column 2] = words that belong to the tag, ';' separated <br />
+To read the file as a dictionary:
+```
+import csv
+inverted_index_meriam = dict()
+with open('tag_index_meriam.csv', 'r') as csvfile:
+    fi = csvfile.read().splitlines() 
+    for row in fi:
+        row = row.split(',')
+        inverted_index_meriam[row[0]] = row[1].split(';')
+```
